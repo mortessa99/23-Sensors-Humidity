@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() , SensorEventListener {
     }
 
     override fun onSensorChanged(event: SensorEvent?) {
-        myTextView.text = event!!.values[0].toString()
+        myTextView.text = event!!.values[0].toString() + "%"
     }
 
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
